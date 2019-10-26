@@ -5,7 +5,7 @@
 In more than one occasion we have encountered the need to request information from the remote server, either lookup or for validation purposes. If, for any reason within the same transaction concept, more than one call to the server was required, we entered into an Asynchronous dilemma.
 ![The Big Picture](JS-FORMS-FullStack-Web-Application-development.jpg)
 
-#Posible Solution
+# Possible Solution
 ```html
 <!DOCTYPE html>
 <html>
@@ -41,22 +41,22 @@ In more than one occasion we have encountered the need to request information fr
      */
     function makeServerSyncCall(url) {
         return new Promise(
-                        resolve => {
-                    //setTimeout(() => {
-                    //__makeAsyncCall(url);
-                    $.ajax({
-                            url: url,
-                            success: function(result){
-                                resolve(result);
-                            }
-                            ,error: function(result){
-                                resolve(result);
-                            }
-                        })
-        //}, 1);
-    });
+            resolve => {
+                $.ajax({
+                    url: url,
+                    success: function(result){
+                        resolve(result);
+                    }
+                    ,error: function(result){
+                        resolve(result);
+                }
+            })
+        });
     }
 
+    /*
+     Using the Schematic Algorithm.
+     */
     //  BEGIN BLOCK
     console.log('BEFORE START BLOCK');
     let x = (async function() {
