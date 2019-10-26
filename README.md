@@ -94,7 +94,7 @@ In more than one occasion we have encountered the need to request information fr
             makeServerSyncCall('./remote_php_wait_for_n_seconds.php?secs=5');
             console.log(p);
 
-            //STEP3 salida de un texto
+            //STEP3 Output or return anything
             console.log("STEP 3  Output or return anything");
             console.log('END BLOCK');
         } catch(e){
