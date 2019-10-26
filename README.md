@@ -73,7 +73,7 @@ In more than one occasion we have encountered the need to request information fr
             for (i = 0; i < 20; i++) {
                 console.log("STEPS INSIDE BLOCK " + i);
             }
-            // If condicion then
+            // If condition then
             if (2 == 1) {
                 // STEP1.1 (SERVER REQUEST)
                 console.log("STEP 1.1  (SERVER REQUEST) Sleep by  2 seconds ('./remote_php_wait_for_n_seconds.php')");
